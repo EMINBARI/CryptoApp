@@ -12,6 +12,8 @@ import WidgetKit
 struct WidgetDataModel: TimelineEntry{
     let date: Date
     let cryptoData: [CryptoData]
+    let maxValue: Double
+    let minValue: Double
 }
 
 struct CryptoData: Hashable{

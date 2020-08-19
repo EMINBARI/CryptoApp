@@ -59,8 +59,12 @@ struct MainWidgetView: View {
                 Spacer()
             }
             
-            CandleChartView(data: data.cryptoData)
-                .padding(.horizontal, 15)
+            CandleChartView(
+                data: data.cryptoData,
+                maxValue: data.maxValue,
+                minValue: data.minValue
+            )
+            .padding(.horizontal, 15)
         }
     }
 }
@@ -76,6 +80,8 @@ struct MainWidgetView_Previews: PreviewProvider {
                                 openPrice: 0.0,
                                 closePrice: 0.0,
                                 highPrice: 0.0,
-                                lowPrice: 0.0)]))
+                                lowPrice: 0.0)],
+                maxValue: 0.0,
+                minValue: 0.0))
     }
 }

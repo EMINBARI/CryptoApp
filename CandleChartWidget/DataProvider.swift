@@ -15,29 +15,22 @@ struct DataProvider: TimelineProvider {
         let date = Date()
         let cryptoDailyLoader = CryptoDailyLoader()
         
-        cryptoDailyLoader.load { result in
-            let cryptoDailyData: CryptoDailyData
-            if case .success(let fetchedData) = result {
-                cryptoDailyData = fetchedData
-   
-                let cryptoData = initDailyCryptoList(cryptoDailyData)
-                
-                for i in cryptoData {
-                    print(i.date)
-                }
-                
-                let timeLineData = WidgetDataModel(
-                    date: date,
-                    cryptoData: cryptoData)
-                
-                let updateValue: Int = 1
-                let timePeriod = Calendar.Component.hour
-                let refreshDate = Calendar.current.date(byAdding: timePeriod, value: updateValue, to: date)!
-                let timeLine = Timeline(entries: [timeLineData], policy: .after(refreshDate))
-                
-                completion(timeLine)
-            }//success case
-        }//load
+        cryptoDailyLoader.loadData { fetchedData in
+            let cryptoData = initDailyCryptoList(fetchedData)
+            
+            let timeLineData = WidgetDataModel(
+                date: date,
+                cryptoData: cryptoData,
+                maxValue: getMaxValue(data: cryptoData),
+                minValue: getMinValue(data: cryptoData))
+            
+            let updateValue: Int = 1
+            let timePeriod = Calendar.Component.hour
+            let refreshDate = Calendar.current.date(byAdding: timePeriod, value: updateValue, to: date)!
+            let timeLine = Timeline(entries: [timeLineData], policy: .after(refreshDate))
+            
+            completion(timeLine)
+        }
     }//timeline
     
     func snapshot(with context: Context, completion: @escaping (WidgetDataModel) -> ()) {
@@ -50,8 +43,9 @@ struct DataProvider: TimelineProvider {
                     openPrice: 0.0,
                     closePrice: 0.0,
                     highPrice: 0.0,
-                    lowPrice: 0.0)
-            ])
+                    lowPrice: 0.0)],
+            maxValue: 0.0,
+            minValue: 0.0)
         completion(timeLineData)
     }
     
@@ -82,4 +76,32 @@ func initDailyCryptoList(_ cryptoDailyData: CryptoDailyData) -> [CryptoData] {
     }
     
     return cryptoData
+}
+
+func getMinValue(data: [CryptoData]) -> Double{
+    var min: Double?
+    for i in data {
+        if min != nil {
+            if min! > i.lowPrice {
+                min = i.lowPrice
+            }
+        } else {
+            min = i.lowPrice
+        }
+    }
+    return min!
+}
+
+func getMaxValue(data: [CryptoData]) -> Double{
+    var max: Double?
+    for i in data {
+        if max != nil {
+            if max! < i.highPrice {
+                max = i.highPrice
+            }
+        } else {
+            max = i.highPrice
+        }
+    }
+    return max!
 }

@@ -10,6 +10,14 @@ import SwiftUI
 struct CandleChartView: View {
     
     var data: [CryptoData]
+    let maxValue: Double
+    let minValue: Double
+    
+    var range: Int {
+        get{
+            return Int(minValue + maxValue)
+        }
+    }
     
     func degreeHeight(_ height: CGFloat, range: Int) -> CGFloat {
         height / CGFloat(range)
@@ -22,7 +30,7 @@ struct CandleChartView: View {
     func dayOffset(_ date: Date) -> CGFloat {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.day], from: Date(), to: date)
-        guard let daysCount: CGFloat = CGFloat(components.day!) else {return 0}
+        let daysCount: CGFloat = CGFloat(components.day!)
         
         return (22 - abs(daysCount)) * 13
     }
