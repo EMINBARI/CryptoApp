@@ -7,15 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3782752624EC026A00BF80C6 /* CandleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF53924EBFFB100A7DF58 /* CandleChartView.swift */; };
+		3782752824EC0A8500BF80C6 /* CandleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782752724EC0A8500BF80C6 /* CandleChart.swift */; };
+		3782752924EC0A8700BF80C6 /* CandleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782752724EC0A8500BF80C6 /* CandleChart.swift */; };
+		3782752A24EC0F5B00BF80C6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF51724EBCDFB00A7DF58 /* Data.swift */; };
 		37ACF4E924EBB89000A7DF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF4E824EBB89000A7DF58 /* AppDelegate.swift */; };
 		37ACF4EB24EBB89000A7DF58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF4EA24EBB89000A7DF58 /* SceneDelegate.swift */; };
 		37ACF4ED24EBB89000A7DF58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF4EC24EBB89000A7DF58 /* ContentView.swift */; };
 		37ACF4EF24EBB89100A7DF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ACF4EE24EBB89100A7DF58 /* Assets.xcassets */; };
 		37ACF4F224EBB89100A7DF58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ACF4F124EBB89100A7DF58 /* Preview Assets.xcassets */; };
 		37ACF4F524EBB89100A7DF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37ACF4F324EBB89100A7DF58 /* LaunchScreen.storyboard */; };
+		37ACF50324EBB8CC00A7DF58 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ACF50224EBB8CC00A7DF58 /* WidgetKit.framework */; };
+		37ACF50524EBB8CC00A7DF58 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ACF50424EBB8CC00A7DF58 /* SwiftUI.framework */; };
+		37ACF50824EBB8CC00A7DF58 /* WidgetConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF50724EBB8CC00A7DF58 /* WidgetConfig.swift */; };
+		37ACF50B24EBB8CC00A7DF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37ACF50A24EBB8CC00A7DF58 /* Assets.xcassets */; };
+		37ACF50D24EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF50924EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition */; };
+		37ACF50E24EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF50924EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition */; };
+		37ACF51124EBB8CC00A7DF58 /* CandleChartWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 37ACF50024EBB8CC00A7DF58 /* CandleChartWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37ACF51824EBCDFB00A7DF58 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF51724EBCDFB00A7DF58 /* Data.swift */; };
+		37ACF51A24EBCF1500A7DF58 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF51924EBCF1500A7DF58 /* Chart.swift */; };
+		37ACF51D24EBE0BD00A7DF58 /* WidgetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF51C24EBE0BD00A7DF58 /* WidgetDataModel.swift */; };
+		37ACF51E24EBE0BD00A7DF58 /* WidgetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF51C24EBE0BD00A7DF58 /* WidgetDataModel.swift */; };
+		37ACF52124EBE26F00A7DF58 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52024EBE26F00A7DF58 /* DataProvider.swift */; };
+		37ACF52224EBE26F00A7DF58 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52024EBE26F00A7DF58 /* DataProvider.swift */; };
+		37ACF52424EBE3D600A7DF58 /* MainWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52324EBE3D600A7DF58 /* MainWidgetView.swift */; };
+		37ACF52524EBE3D600A7DF58 /* MainWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52324EBE3D600A7DF58 /* MainWidgetView.swift */; };
+		37ACF52724EBE5A300A7DF58 /* CryptoDailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52624EBE5A300A7DF58 /* CryptoDailyData.swift */; };
+		37ACF52824EBE5A300A7DF58 /* CryptoDailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52624EBE5A300A7DF58 /* CryptoDailyData.swift */; };
+		37ACF52B24EBE6D500A7DF58 /* CryptoDailyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52A24EBE6D500A7DF58 /* CryptoDailyLoader.swift */; };
+		37ACF52C24EBE6D500A7DF58 /* CryptoDailyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52A24EBE6D500A7DF58 /* CryptoDailyLoader.swift */; };
+		37ACF52F24EBFDE200A7DF58 /* GetFormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52E24EBFDE200A7DF58 /* GetFormattedDate.swift */; };
+		37ACF53824EBFE0C00A7DF58 /* GetFormattedDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF52E24EBFDE200A7DF58 /* GetFormattedDate.swift */; };
+		37ACF53A24EBFFB100A7DF58 /* CandleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF53924EBFFB100A7DF58 /* CandleChartView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		37ACF50F24EBB8CC00A7DF58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37ACF4DD24EBB89000A7DF58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37ACF4FF24EBB8CC00A7DF58;
+			remoteInfo = CandleChartWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37ACF51524EBB8CC00A7DF58 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				37ACF51124EBB8CC00A7DF58 /* CandleChartWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3782752724EC0A8500BF80C6 /* CandleChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChart.swift; sourceTree = "<group>"; };
 		37ACF4E524EBB89000A7DF58 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ACF4E824EBB89000A7DF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ACF4EA24EBB89000A7DF58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +75,22 @@
 		37ACF4F124EBB89100A7DF58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37ACF4F424EBB89100A7DF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37ACF4F624EBB89100A7DF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37ACF50024EBB8CC00A7DF58 /* CandleChartWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CandleChartWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ACF50224EBB8CC00A7DF58 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		37ACF50424EBB8CC00A7DF58 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		37ACF50724EBB8CC00A7DF58 /* WidgetConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetConfig.swift; sourceTree = "<group>"; };
+		37ACF50924EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = CandleChartWidget.intentdefinition; sourceTree = "<group>"; };
+		37ACF50A24EBB8CC00A7DF58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37ACF50C24EBB8CC00A7DF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37ACF51724EBCDFB00A7DF58 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		37ACF51924EBCF1500A7DF58 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		37ACF51C24EBE0BD00A7DF58 /* WidgetDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetDataModel.swift; sourceTree = "<group>"; };
+		37ACF52024EBE26F00A7DF58 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		37ACF52324EBE3D600A7DF58 /* MainWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWidgetView.swift; sourceTree = "<group>"; };
+		37ACF52624EBE5A300A7DF58 /* CryptoDailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDailyData.swift; sourceTree = "<group>"; };
+		37ACF52A24EBE6D500A7DF58 /* CryptoDailyLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDailyLoader.swift; sourceTree = "<group>"; };
+		37ACF52E24EBFDE200A7DF58 /* GetFormattedDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFormattedDate.swift; sourceTree = "<group>"; };
+		37ACF53924EBFFB100A7DF58 /* CandleChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +101,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37ACF4FD24EBB8CC00A7DF58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37ACF50524EBB8CC00A7DF58 /* SwiftUI.framework in Frameworks */,
+				37ACF50324EBB8CC00A7DF58 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				37ACF4E724EBB89000A7DF58 /* CryptoApp */,
+				37ACF50624EBB8CC00A7DF58 /* CandleChartWidget */,
+				37ACF50124EBB8CC00A7DF58 /* Frameworks */,
 				37ACF4E624EBB89000A7DF58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				37ACF4E524EBB89000A7DF58 /* CryptoApp.app */,
+				37ACF50024EBB8CC00A7DF58 /* CandleChartWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +135,13 @@
 		37ACF4E724EBB89000A7DF58 /* CryptoApp */ = {
 			isa = PBXGroup;
 			children = (
+				37ACF52D24EBFDC700A7DF58 /* Extensions */,
+				37ACF52924EBE6AF00A7DF58 /* Services */,
+				37ACF51624EBCDE800A7DF58 /* Models */,
 				37ACF4E824EBB89000A7DF58 /* AppDelegate.swift */,
 				37ACF4EA24EBB89000A7DF58 /* SceneDelegate.swift */,
 				37ACF4EC24EBB89000A7DF58 /* ContentView.swift */,
+				37ACF51924EBCF1500A7DF58 /* Chart.swift */,
 				37ACF4EE24EBB89100A7DF58 /* Assets.xcassets */,
 				37ACF4F324EBB89100A7DF58 /* LaunchScreen.storyboard */,
 				37ACF4F624EBB89100A7DF58 /* Info.plist */,
@@ -75,6 +158,72 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37ACF50124EBB8CC00A7DF58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF50224EBB8CC00A7DF58 /* WidgetKit.framework */,
+				37ACF50424EBB8CC00A7DF58 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37ACF50624EBB8CC00A7DF58 /* CandleChartWidget */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF51F24EBE23E00A7DF58 /* WidgetView */,
+				37ACF51B24EBE08B00A7DF58 /* WidgetModels */,
+				37ACF50724EBB8CC00A7DF58 /* WidgetConfig.swift */,
+				37ACF52024EBE26F00A7DF58 /* DataProvider.swift */,
+				37ACF50924EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition */,
+				37ACF50A24EBB8CC00A7DF58 /* Assets.xcassets */,
+				37ACF50C24EBB8CC00A7DF58 /* Info.plist */,
+			);
+			path = CandleChartWidget;
+			sourceTree = "<group>";
+		};
+		37ACF51624EBCDE800A7DF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF51724EBCDFB00A7DF58 /* Data.swift */,
+				37ACF52624EBE5A300A7DF58 /* CryptoDailyData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37ACF51B24EBE08B00A7DF58 /* WidgetModels */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF51C24EBE0BD00A7DF58 /* WidgetDataModel.swift */,
+			);
+			path = WidgetModels;
+			sourceTree = "<group>";
+		};
+		37ACF51F24EBE23E00A7DF58 /* WidgetView */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF52324EBE3D600A7DF58 /* MainWidgetView.swift */,
+				37ACF53924EBFFB100A7DF58 /* CandleChartView.swift */,
+			);
+			path = WidgetView;
+			sourceTree = "<group>";
+		};
+		37ACF52924EBE6AF00A7DF58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF52A24EBE6D500A7DF58 /* CryptoDailyLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		37ACF52D24EBFDC700A7DF58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37ACF52E24EBFDE200A7DF58 /* GetFormattedDate.swift */,
+				3782752724EC0A8500BF80C6 /* CandleChart.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +234,34 @@
 				37ACF4E124EBB89000A7DF58 /* Sources */,
 				37ACF4E224EBB89000A7DF58 /* Frameworks */,
 				37ACF4E324EBB89000A7DF58 /* Resources */,
+				37ACF51524EBB8CC00A7DF58 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37ACF51024EBB8CC00A7DF58 /* PBXTargetDependency */,
 			);
 			name = CryptoApp;
 			productName = CryptoApp;
 			productReference = 37ACF4E524EBB89000A7DF58 /* CryptoApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		37ACF4FF24EBB8CC00A7DF58 /* CandleChartWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37ACF51224EBB8CC00A7DF58 /* Build configuration list for PBXNativeTarget "CandleChartWidgetExtension" */;
+			buildPhases = (
+				37ACF4FC24EBB8CC00A7DF58 /* Sources */,
+				37ACF4FD24EBB8CC00A7DF58 /* Frameworks */,
+				37ACF4FE24EBB8CC00A7DF58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CandleChartWidgetExtension;
+			productName = CandleChartWidgetExtension;
+			productReference = 37ACF50024EBB8CC00A7DF58 /* CandleChartWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +273,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					37ACF4E424EBB89000A7DF58 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					37ACF4FF24EBB8CC00A7DF58 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -123,6 +294,7 @@
 			projectRoot = "";
 			targets = (
 				37ACF4E424EBB89000A7DF58 /* CryptoApp */,
+				37ACF4FF24EBB8CC00A7DF58 /* CandleChartWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +310,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37ACF4FE24EBB8CC00A7DF58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37ACF50B24EBB8CC00A7DF58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,13 +325,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ACF52F24EBFDE200A7DF58 /* GetFormattedDate.swift in Sources */,
+				37ACF52B24EBE6D500A7DF58 /* CryptoDailyLoader.swift in Sources */,
+				37ACF51D24EBE0BD00A7DF58 /* WidgetDataModel.swift in Sources */,
+				37ACF50E24EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition in Sources */,
+				37ACF52124EBE26F00A7DF58 /* DataProvider.swift in Sources */,
+				37ACF51824EBCDFB00A7DF58 /* Data.swift in Sources */,
+				37ACF52724EBE5A300A7DF58 /* CryptoDailyData.swift in Sources */,
+				37ACF51A24EBCF1500A7DF58 /* Chart.swift in Sources */,
 				37ACF4E924EBB89000A7DF58 /* AppDelegate.swift in Sources */,
+				3782752824EC0A8500BF80C6 /* CandleChart.swift in Sources */,
 				37ACF4EB24EBB89000A7DF58 /* SceneDelegate.swift in Sources */,
+				37ACF53A24EBFFB100A7DF58 /* CandleChartView.swift in Sources */,
 				37ACF4ED24EBB89000A7DF58 /* ContentView.swift in Sources */,
+				37ACF52424EBE3D600A7DF58 /* MainWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37ACF4FC24EBB8CC00A7DF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37ACF50D24EBB8CC00A7DF58 /* CandleChartWidget.intentdefinition in Sources */,
+				37ACF52524EBE3D600A7DF58 /* MainWidgetView.swift in Sources */,
+				37ACF52824EBE5A300A7DF58 /* CryptoDailyData.swift in Sources */,
+				37ACF52C24EBE6D500A7DF58 /* CryptoDailyLoader.swift in Sources */,
+				3782752A24EC0F5B00BF80C6 /* Data.swift in Sources */,
+				3782752624EC026A00BF80C6 /* CandleChartView.swift in Sources */,
+				37ACF51E24EBE0BD00A7DF58 /* WidgetDataModel.swift in Sources */,
+				37ACF53824EBFE0C00A7DF58 /* GetFormattedDate.swift in Sources */,
+				3782752924EC0A8700BF80C6 /* CandleChart.swift in Sources */,
+				37ACF52224EBE26F00A7DF58 /* DataProvider.swift in Sources */,
+				37ACF50824EBB8CC00A7DF58 /* WidgetConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37ACF51024EBB8CC00A7DF58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37ACF4FF24EBB8CC00A7DF58 /* CandleChartWidgetExtension */;
+			targetProxy = 37ACF50F24EBB8CC00A7DF58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		37ACF4F324EBB89100A7DF58 /* LaunchScreen.storyboard */ = {
@@ -284,6 +501,7 @@
 		37ACF4FA24EBB89100A7DF58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +523,7 @@
 		37ACF4FB24EBB89100A7DF58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +537,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Eminus.CryptoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37ACF51324EBB8CC00A7DF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2493DF6K24;
+				INFOPLIST_FILE = CandleChartWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Eminus.CryptoApp.CandleChartWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37ACF51424EBB8CC00A7DF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2493DF6K24;
+				INFOPLIST_FILE = CandleChartWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Eminus.CryptoApp.CandleChartWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -340,6 +601,15 @@
 			buildConfigurations = (
 				37ACF4FA24EBB89100A7DF58 /* Debug */,
 				37ACF4FB24EBB89100A7DF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37ACF51224EBB8CC00A7DF58 /* Build configuration list for PBXNativeTarget "CandleChartWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37ACF51324EBB8CC00A7DF58 /* Debug */,
+				37ACF51424EBB8CC00A7DF58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
