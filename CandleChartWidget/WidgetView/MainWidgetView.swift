@@ -45,13 +45,8 @@ struct MainWidgetView_Previews: PreviewProvider {
         MainWidgetView(
             data: DataProvider.Entry.init(
                 date: Date(),
-                cryptoData: [CryptoData(
-                                date: "",
-                                openPrice: 0.0,
-                                closePrice: 0.0,
-                                highPrice: 0.0,
-                                lowPrice: 0.0)],
-                maxValue: 0.0,
-                minValue: 0.0))
+                cryptoData: snapshotPreviewData,
+                maxValue: getMaxValue(data: snapshotPreviewData),
+                minValue: getMinValue(data: snapshotPreviewData)))
     }
 }
