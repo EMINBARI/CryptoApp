@@ -17,7 +17,10 @@ struct CandleChartView: View {
     let scale: CGFloat = 1000
     
     let shadowBarWidth: CGFloat = 2.4
+    let shadowBarColor: Color = Color.white.opacity(0.9)
     let bodyBarWidth: CGFloat = 8
+    let bodyBullColor: Color = Color.green
+    let bodyBearColor: Color = Color.red
     
     let gridColor: Color = Color.white.opacity(0.5)
     let labelColor: Color = Color.white.opacity(0.25)
@@ -98,7 +101,7 @@ struct CandleChartView: View {
                     
                     p.move(to: .init(x: dOffset , y: reader.size.height - lowOffset))
                     p.addLine(to: .init(x: dOffset , y: reader.size.height - highOffset))
-                }.stroke(Color.white.opacity(0.9), lineWidth: shadowBarWidth)
+                }.stroke(shadowBarColor, lineWidth: shadowBarWidth)
             }
             
             //MARK:- Body bars (open and close values)
@@ -119,7 +122,7 @@ struct CandleChartView: View {
                     p.move(to: .init(x: dOffset, y: reader.size.height - lowOffset))
                     p.addLine(to: .init(x: dOffset, y: reader.size.height - highOffset))
                 }.stroke(
-                    isBull ? Color.green : Color.red,
+                    isBull ? bodyBullColor : bodyBearColor,
                     lineWidth: bodyBarWidth)
             }//Foreach
         }//GeometryReader
