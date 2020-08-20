@@ -37,18 +37,11 @@ struct DataProvider: TimelineProvider {
         let date = Date()
         let timeLineData = WidgetDataModel(
             date: date,
-            cryptoData: [
-                CryptoData(
-                    date: "N/A",
-                    openPrice: 0.0,
-                    closePrice: 0.0,
-                    highPrice: 0.0,
-                    lowPrice: 0.0)],
-            maxValue: 0.0,
-            minValue: 0.0)
+            cryptoData: snapshotPreviewData,
+            maxValue: getMaxValue(data: snapshotPreviewData),
+            minValue: getMinValue(data: snapshotPreviewData))
         completion(timeLineData)
     }
-    
 }
 
 func initDailyCryptoList(_ cryptoDailyData: CryptoDailyData) -> [CryptoData] {
@@ -56,9 +49,9 @@ func initDailyCryptoList(_ cryptoDailyData: CryptoDailyData) -> [CryptoData] {
     var dateArray: [String] = []
     
     let currentDate = Date()
-    
-    //MARK:- create last 20 dates
-    for i in 0...22 {
+  
+    //MARK:- last 21 days data
+    for i in 0...20 {
         let date = Calendar.current.date(byAdding: .day, value: -i, to: currentDate)
         let str = date!.getFormattedDate(format: "yyyy-MM-dd")
         dateArray.append(str)

@@ -14,7 +14,6 @@ struct CData: Hashable {
     let min: Double
     let id: Int
     let date: String
-    
 }
 
 let measurements: [CData] = [

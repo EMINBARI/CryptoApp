@@ -31,28 +31,7 @@ struct Chart: View {
     }
     
     var body: some View {
-        GeometryReader { reader in
-//            ForEach(measurements, id: \.self) { measurement in
-//              // 2
-//              Path { p in
-//                // 3
-//                let dWidth = self.dayWidth(reader.size.width, count: 20)
-//                let dHeight = self.degreeHeight(reader.size.height, range: 60)
-//                // 4
-//                let dOffset = CGFloat(measurement.id * 10)
-//                // 5
-//                let lowOffset = self.tempOffset(measurement.low, degreeHeight: dHeight)
-//                let highOffset = self.tempOffset(measurement.high, degreeHeight: dHeight)
-//                
-//                // 6
-//                p.move(to: .init(x: dOffset, y: reader.size.height - lowOffset))
-//                p.addLine(to: .init(x: dOffset, y: reader.size.height - highOffset))
-//                
-//             
-//                // 7
-//              }.stroke(Color.blue, lineWidth: 2)
-//            }
-            
+        GeometryReader { reader in            
             ForEach(measurements, id: \.self) { measurement in
               // 2
               Path { p in

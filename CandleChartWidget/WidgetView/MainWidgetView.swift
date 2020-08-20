@@ -11,64 +11,34 @@ struct MainWidgetView: View {
     
     var data: DataProvider.Entry
     
-    var formatedCurrencyValue: String {
-        get {
-            let numberFormatter = NumberFormatter()
-            numberFormatter.numberStyle = NumberFormatter.Style.decimal
-            guard let formattedNumber = numberFormatter.string(from: NSNumber(value:data.cryptoData[0].openPrice)) else {return "N/A"}
-            return formattedNumber
-        }
-    }
-    
-    var getDate: String {
-        get {
-         let currentDate = Date()
-            let formatter = DateFormatter()
-            formatter.dateFormat = "dd MMM, yyyy"
-            return formatter.string(from: currentDate)
-        }
-    }
+    //MARK:- Oversize frameHeight for chart zooming
+    let frameHeight: CGFloat = 900
+    let horizontalPadding: CGFloat = 15
     
     var body: some View {
         ZStack {
-            Rectangle().fill(Color.black)
-            HStack {
-                VStack (alignment: .leading) {
-                    HStack {
-                        Text("BTC/USD")
-                            .font(.title2)
-                            .bold()
-                            .foregroundColor(.white)
-                        
-                        Text("$" + formatedCurrencyValue)
-                            .font(.body)
-                            .bold()
-                            .foregroundColor(Color.white.opacity(0.9))
-                    }
-                    Text(getDate)
-                        .font(.caption)
-                        .bold()
-                        .foregroundColor(Color.white.opacity(0.9))
-                    
-                    Spacer()
-                }
-                .padding(.top, 10)
-                .padding(.horizontal, 15)
-                .zIndex(1)
-                
-                Spacer()
-            }
             
+            //MARK:- Main view background color
+            Rectangle().fill(Color.black)
+            
+            //MARK:- Header with crypto info
+            HeaderView(
+                openPrice: data.cryptoData[0].openPrice,
+                parentHeight: frameHeight)
+            
+            //MARK:- Candle chart
             CandleChartView(
                 data: data.cryptoData,
                 maxValue: data.maxValue,
-                minValue: data.minValue
-            )
-            .padding(.horizontal, 15)
+                minValue: data.minValue)
+            .frame(height: frameHeight)
+            .padding(.horizontal, horizontalPadding)
+            
         }
     }
 }
 
+//MARK:- Preview
 struct MainWidgetView_Previews: PreviewProvider {
     let data: DataProvider.Entry
     static var previews: some View {

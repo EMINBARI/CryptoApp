@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373469BE24EE9D3600F2B7B3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373469BD24EE9D3600F2B7B3 /* HeaderView.swift */; };
+		373469BF24EE9D3600F2B7B3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373469BD24EE9D3600F2B7B3 /* HeaderView.swift */; };
+		373469C124EEA35500F2B7B3 /* GetDateFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373469C024EEA35500F2B7B3 /* GetDateFromString.swift */; };
+		373469C224EEA35500F2B7B3 /* GetDateFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373469C024EEA35500F2B7B3 /* GetDateFromString.swift */; };
+		373469C424EEB31B00F2B7B3 /* SnapshotPreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373469C324EEB31B00F2B7B3 /* SnapshotPreviewData.swift */; };
+		373469C524EEB31B00F2B7B3 /* SnapshotPreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373469C324EEB31B00F2B7B3 /* SnapshotPreviewData.swift */; };
 		3782752624EC026A00BF80C6 /* CandleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF53924EBFFB100A7DF58 /* CandleChartView.swift */; };
-		3782752824EC0A8500BF80C6 /* CandleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782752724EC0A8500BF80C6 /* CandleChart.swift */; };
-		3782752924EC0A8700BF80C6 /* CandleChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782752724EC0A8500BF80C6 /* CandleChart.swift */; };
 		3782752A24EC0F5B00BF80C6 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF51724EBCDFB00A7DF58 /* Data.swift */; };
 		37ACF4E924EBB89000A7DF58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF4E824EBB89000A7DF58 /* AppDelegate.swift */; };
 		37ACF4EB24EBB89000A7DF58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ACF4EA24EBB89000A7DF58 /* SceneDelegate.swift */; };
@@ -66,7 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3782752724EC0A8500BF80C6 /* CandleChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChart.swift; sourceTree = "<group>"; };
+		373469BD24EE9D3600F2B7B3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		373469C024EEA35500F2B7B3 /* GetDateFromString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDateFromString.swift; sourceTree = "<group>"; };
+		373469C324EEB31B00F2B7B3 /* SnapshotPreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotPreviewData.swift; sourceTree = "<group>"; };
 		37ACF4E524EBB89000A7DF58 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37ACF4E824EBB89000A7DF58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37ACF4EA24EBB89000A7DF58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				37ACF51C24EBE0BD00A7DF58 /* WidgetDataModel.swift */,
+				373469C324EEB31B00F2B7B3 /* SnapshotPreviewData.swift */,
 			);
 			path = WidgetModels;
 			sourceTree = "<group>";
@@ -203,6 +210,7 @@
 			children = (
 				37ACF52324EBE3D600A7DF58 /* MainWidgetView.swift */,
 				37ACF53924EBFFB100A7DF58 /* CandleChartView.swift */,
+				373469BD24EE9D3600F2B7B3 /* HeaderView.swift */,
 			);
 			path = WidgetView;
 			sourceTree = "<group>";
@@ -219,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				37ACF52E24EBFDE200A7DF58 /* GetFormattedDate.swift */,
-				3782752724EC0A8500BF80C6 /* CandleChart.swift */,
+				373469C024EEA35500F2B7B3 /* GetDateFromString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -325,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373469C424EEB31B00F2B7B3 /* SnapshotPreviewData.swift in Sources */,
 				37ACF52F24EBFDE200A7DF58 /* GetFormattedDate.swift in Sources */,
 				37ACF52B24EBE6D500A7DF58 /* CryptoDailyLoader.swift in Sources */,
 				37ACF51D24EBE0BD00A7DF58 /* WidgetDataModel.swift in Sources */,
@@ -334,7 +343,8 @@
 				37ACF52724EBE5A300A7DF58 /* CryptoDailyData.swift in Sources */,
 				37ACF51A24EBCF1500A7DF58 /* Chart.swift in Sources */,
 				37ACF4E924EBB89000A7DF58 /* AppDelegate.swift in Sources */,
-				3782752824EC0A8500BF80C6 /* CandleChart.swift in Sources */,
+				373469BE24EE9D3600F2B7B3 /* HeaderView.swift in Sources */,
+				373469C124EEA35500F2B7B3 /* GetDateFromString.swift in Sources */,
 				37ACF4EB24EBB89000A7DF58 /* SceneDelegate.swift in Sources */,
 				37ACF53A24EBFFB100A7DF58 /* CandleChartView.swift in Sources */,
 				37ACF4ED24EBB89000A7DF58 /* ContentView.swift in Sources */,
@@ -350,13 +360,15 @@
 				37ACF52524EBE3D600A7DF58 /* MainWidgetView.swift in Sources */,
 				37ACF52824EBE5A300A7DF58 /* CryptoDailyData.swift in Sources */,
 				37ACF52C24EBE6D500A7DF58 /* CryptoDailyLoader.swift in Sources */,
+				373469C524EEB31B00F2B7B3 /* SnapshotPreviewData.swift in Sources */,
+				373469BF24EE9D3600F2B7B3 /* HeaderView.swift in Sources */,
 				3782752A24EC0F5B00BF80C6 /* Data.swift in Sources */,
 				3782752624EC026A00BF80C6 /* CandleChartView.swift in Sources */,
 				37ACF51E24EBE0BD00A7DF58 /* WidgetDataModel.swift in Sources */,
 				37ACF53824EBFE0C00A7DF58 /* GetFormattedDate.swift in Sources */,
-				3782752924EC0A8700BF80C6 /* CandleChart.swift in Sources */,
 				37ACF52224EBE26F00A7DF58 /* DataProvider.swift in Sources */,
 				37ACF50824EBB8CC00A7DF58 /* WidgetConfig.swift in Sources */,
+				373469C224EEA35500F2B7B3 /* GetDateFromString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

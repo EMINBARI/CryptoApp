@@ -20,6 +20,6 @@ struct Config: Widget {
         }
         .configurationDisplayName(Text("Bitcoin stocks"))
         .supportedFamilies([.systemMedium])
-        .description(Text("Current Bitcoin exchange rate"))
+        .description(Text("Bitcoin per day rate in candle chart"))
     }
 }
